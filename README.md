@@ -51,8 +51,24 @@ La mission jours est de dynamiser le site internet du studio d’animation Kouka
 
 - changement du fond de la section "le lieu" et ajout des nuages avec un filtre blur sur ces derniers pour leur donner un aspect cotoneux. Je ferais le mouvement plus tard car il y a une contradiction entre Figma et le guide des étapes.
 
-- ajout du comportement des titres h2 mais pour le moment activé à l'affichage de la page. A voir après pour l'activer avec le scroll.
+- ajout du comportement des titres h2 mais pour le moment activé quand on survol les sections concerné durant le scroll. A voir si c'est ce qui était demandé.
 
 - création de la nouvelle section (oscar).
 
-8 - Réintégration des modifications dans le thème enfant
+8 - Réintégration des modifications dans le thème enfant.
+
+9 - Modification de l'effet d'apparition du logo titre et des différentes sections pour que cela soit uniquement géré par CSS.
+
+10 - Mise en place de la fonction IntersectionObserver pour détecter quand les sections sont à l'affichage et ne déclencher l'effêt d'apparition en fade-in qu'à ce moment là
+
+11 - Ajout d'une accéleration sur la rotation des fleurs quand on scroll.
+
+12 - Repositionnement des fleurs dans le footer au niveau de la nouvelle section Oscar.
+
+13 - Ajout de l'effet de tremblement sur le logo titre une fois qu'il est en place.
+
+14 - Ajout du nouveau font et des images pour les nuages dans la section LIEU. Avec ajout par CSS d'un effet blur sur les nuages.
+
+15 - Mise en place du déplacement vertical des nuages en fonction du scroll.
+
+16 - Création d'un template avec un slider SWIPER pour afficher les personnages.
