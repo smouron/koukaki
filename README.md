@@ -39,13 +39,15 @@ La mission jours est de dynamiser le site internet du studio d’animation Kouka
 
 6 - Création d'une simple page html avec tous les élements pour faire mes essais à blanc
 
-7 - Puis, vienne les étapes suivantes avec la mise en place
+7 - Puis, vient les étapes suivantes avec la mise en place
 
 - de la vidéo dans la hero à la place du fond.
 
 - de l'effet d'apparition de la vidéo et du logo titre.
 
-- de l'effet d'apparition des sections. - du comportement du logo titre quand on scroll vers le bas.
+- de l'effet d'apparition des sections. 
+
+- du comportement du logo titre quand on scroll vers le bas.
 
 - de la rotation de toutes les fleurs (sauf celle où il y a les nuages car elles font partie de l'image de fond). A voir après pour accélérer la rotation des fleurs avec le scroll.
 
@@ -67,8 +69,8 @@ La mission jours est de dynamiser le site internet du studio d’animation Kouka
 
 13 - Ajout de l'effet de tremblement sur le logo titre une fois qu'il est en place.
 
-14 - Ajout du nouveau font et des images pour les nuages dans la section LIEU. Avec ajout par CSS d'un effet blur sur les nuages.
+14 - Mise en place du déplacement vertical des nuages en fonction du scroll.
 
-15 - Mise en place du déplacement vertical des nuages en fonction du scroll.
+15 - Création d'un template avec un slider SWIPER pour afficher les personnages.
 
-16 - Création d'un template avec un slider SWIPER pour afficher les personnages.
+17 - Ajout de l'effet d'apparation des titres H2 et H3 quand on scroll vers le bas en utilisant la fonction IntersectionObserver pour déclencher l'effet. 
