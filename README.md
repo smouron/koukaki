@@ -74,3 +74,11 @@ La mission jours est de dynamiser le site internet du studio d’animation Kouka
 15 - Création d'un template avec un slider SWIPER pour afficher les personnages.
 
 17 - Ajout de l'effet d'apparation des titres H2 et H3 quand on scroll vers le bas en utilisant la fonction IntersectionObserver pour déclencher l'effet. 
+
+18 - Modification de la nav bar :
+
+- Mise en place d'un bouton hamburger à la place du menu qui fera ouvrir une page en plein écran.
+
+- Mise en place d'une page modale pour afficher cette nouvelle page qui contient le menu.
+
+- Ajout des décorations (chats + fleurs), selon les consignes de figma et avec les animations correspondantes (les chats flotent et les fleurs tournent).
