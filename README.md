@@ -45,7 +45,7 @@ La mission jours est de dynamiser le site internet du studio d’animation Kouka
 
 - de l'effet d'apparition de la vidéo et du logo titre.
 
-- de l'effet d'apparition des sections. 
+- de l'effet d'apparition des sections.
 
 - du comportement du logo titre quand on scroll vers le bas.
 
@@ -73,7 +73,7 @@ La mission jours est de dynamiser le site internet du studio d’animation Kouka
 
 15 - Création d'un template avec un slider SWIPER pour afficher les personnages.
 
-17 - Ajout de l'effet d'apparation des titres H2 et H3 quand on scroll vers le bas en utilisant la fonction IntersectionObserver pour déclencher l'effet. 
+17 - Ajout de l'effet d'apparation des titres H2 et H3 quand on scroll vers le bas en utilisant la fonction IntersectionObserver pour déclencher l'effet.
 
 18 - Modification de la nav bar :
 
@@ -82,3 +82,5 @@ La mission jours est de dynamiser le site internet du studio d’animation Kouka
 - Mise en place d'une page modale pour afficher cette nouvelle page qui contient le menu.
 
 - Ajout des décorations (chats + fleurs), selon les consignes de figma et avec les animations correspondantes (les chats flotent et les fleurs tournent).
+
+19 - Ajustement et mise en place de médias query pour être responsif.
