@@ -6,41 +6,32 @@
 
 // console.log("Démarrage du script !");
 
-// Différer le lancement du script => ne se lance qu'une fois que tout le HTML a été chargé
-if (document.readyState === "complete") {
-  monScript();
-} else {
-  document.addEventListener("DOMContentLoaded", function () {
-    monScript();
-  });
-}
-
-function monScript() {
+$(document).ready(function () {
   // console.log("HTML prêt !");
 
   let posX = 0;
   let mouveCloud = false;
 
   const root = document.documentElement;
-  const burger = document.querySelector(".modal__burger");
-  const content = document.querySelector(".modal__content");
-  const modalTriggers = document.querySelectorAll(".modal-trigger");
   const place = document.querySelector("#place");
-  const littleCloud = document.querySelector(".place--little_cloud");
-  const bigCloud = document.querySelector(".place--big_cloud");
 
-  // Gestion de la fermeture et de l'ouverture de la modale
-  modalTriggers.forEach((trigger) => {
-    trigger.addEventListener("click", () => {
-      toggleModal();
-    });
+  // Gestion de la fermeture et de l'ouverture de la modale avec jQuery
+  $(".modal-open").click(function () {
+    console.log("modal-trigger cliqué");
+    $(".modal__content").animate({ height: "toggle", opacity: "toggle" }, 1000);
+    $(".modal__content").toggleClass("open");
+    $(".modal__burger").toggleClass("close");
   });
-
-  function toggleModal() {
-    burger.classList.toggle("close");
-    content.classList.toggle("hidden");
-    content.classList.toggle("visible");
-  }
+  $("a").click(function () {
+    if ($(".modal__content").hasClass("open")) {
+      $(".modal__content").animate(
+        { height: "toggle", opacity: "toggle" },
+        1000
+      );
+      $(".modal__content").removeClass("open");
+      $(".modal__burger").removeClass("close");
+    }
+  });
 
   // Gestion du déclenchement des évenements quand ils apparaissent
   const handleIntersect = (entries) => {
@@ -111,8 +102,8 @@ function monScript() {
   observer.observe(document.querySelector(".studio__title"));
   observer.observe(document.querySelector(".characters__title"));
   observer.observe(document.querySelector(".place__title"));
-  observer.observe(bigCloud);
-  observer.observe(littleCloud);
+  observer.observe(document.querySelector(".place--big_cloud"));
+  observer.observe(document.querySelector(".place--little_cloud"));
 
   // Contrôle si on scroll sur la fenêtre
   window.addEventListener("scroll", () => {
@@ -138,4 +129,4 @@ function monScript() {
       posX = 0;
     }
   });
-}
+});
