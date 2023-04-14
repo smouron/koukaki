@@ -4,16 +4,19 @@
  * Released on: April 2023
  */
 
-// console.log("Démarrage du script !");
+console.log("Démarrage du script !");
 
-$(document).ready(function () {
-  // console.log("HTML prêt !");
+// Différer le lancement du script => ne se lance qu'une fois que tout le HTML a été chargé
+if (document.readyState === "complete") {
+  monScript();
+} else {
+  document.addEventListener("DOMContentLoaded", function () {
+    monScript();
+  });
+}
 
-  let posX = 0;
-  let mouveCloud = false;
-
-  const root = document.documentElement;
-  const place = document.querySelector("#place");
+function monScript() {
+  console.log("HTML prêt !");
 
   // Gestion de la fermeture et de l'ouverture de la modale avec jQuery
   $(".modal-open").click(function () {
@@ -33,13 +36,47 @@ $(document).ready(function () {
     }
   });
 
-  // Gestion du déclenchement des évenements quand ils apparaissent
+   // Initialize Swiper
+   var swiper = new Swiper('.swiper-container', {
+    spaceBetween: 60,
+    speed: 1000,
+    autoplay: {
+        delay: 250,
+    },
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 3,
+    coverflowEffect: {
+        rotate: 60,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+    },
+    autoplay: {
+        delay: 2500,
+        // disableOnInteraction: false,
+    },
+
+});
+
+  let posX = 0;
+  let mouveCloud = false;
+
+  const root = document.documentElement;
+  const place = document.querySelector("#place");
+
   const handleIntersect = (entries) => {
     entries.forEach(function (entry) {
       // Contrôle si l'élément à observer
       // est dans le ratio de la zone qui est affichée
       if (entry.intersectionRatio > ratio) {
         elementName = entry.target.className;
+        // console.log(elementName + " est visible");
+        
+        // Si on trouve l'élément indiqué, on active l'animation d'apparition
         if (
           elementName === "story hidden" ||
           elementName === "studio hidden" ||
@@ -63,17 +100,7 @@ $(document).ready(function () {
           entry.target.classList.add("animTitle");
           observer.unobserve(entry.target);
           entry.target.classList.remove("hidden");
-        }
-
-        // Si on a trouvé un des nuages on active l'autorisation de déplacement
-        if (
-          elementName === "place--big_cloud" ||
-          elementName === "place--little_cloud"
-        ) {
-          mouveCloud = true;
-        } else {
-          mouveCloud = false;
-        }
+        }        
       }
     });
   };
@@ -102,8 +129,6 @@ $(document).ready(function () {
   observer.observe(document.querySelector(".studio__title"));
   observer.observe(document.querySelector(".characters__title"));
   observer.observe(document.querySelector(".place__title"));
-  observer.observe(document.querySelector(".place--big_cloud"));
-  observer.observe(document.querySelector(".place--little_cloud"));
 
   // Contrôle si on scroll sur la fenêtre
   window.addEventListener("scroll", () => {
@@ -119,14 +144,10 @@ $(document).ready(function () {
       }
     }, 500);
 
-    // on ne bouge les nuages que s'ils ont été détécté à l'affichage
-    if (mouveCloud) {
+    // On bouge les 2 nuages en fonction du scroll
       posX = Math.round(0 - (window.scrollY - place.offsetTop - 200));
       if (posX <= 0 && posX > -400) {
         root.style.setProperty("--posX", posX + "px");
-      }
-    } else {
-      posX = 0;
-    }
+      }     
   });
-});
+}

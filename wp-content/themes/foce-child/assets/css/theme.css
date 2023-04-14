@@ -1,7 +1,4 @@
 :root {
-  --top: 0px;
-  --left: 0px;
-  --transy: 0px;
   --rotate: 15s;
   --posX: 0;
 }
@@ -86,7 +83,7 @@
 .modal .modal__content {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 91vh;
   background: #FFF5E9;
   font-size: 3em;
   display: none;
@@ -245,11 +242,13 @@
 .banner__background {
   z-index: -2;
   opacity: 1;
+  left: auto !important;
 }
 
 .banner__video {  
   z-index: 1;
   opacity: 1;
+  left: auto !important;
 }
 
 .banner__background, 
@@ -270,7 +269,7 @@
 }
 
 .mouve-up {
-  animation: move-up 1s 300ms both;  
+  animation: move-up 2s 300ms both;  
 }
 
 /* Pour faire apparaitre les éléments en descendant et avec agmentatation de l'opacité */
@@ -343,6 +342,7 @@
 
   .banner__background {
     opacity: 1;
+    min-width: 1200px !important;
   }
 }
 
@@ -361,6 +361,7 @@
 
   .banner__background {
     opacity: 1;
+    min-width: 900px !important;
   }
 }
 
@@ -510,7 +511,7 @@
 }
 
 .animTitle {
-  animation: animTitle 500ms 500ms forwards;
+  animation: animTitle 1s 1s forwards;
 }
 
 @keyframes animTitle {
@@ -531,32 +532,44 @@
 .story #characters {
   position: relative;
   margin-bottom: 0 !important;
+  z-index: 20;
 }
 
-swiper-container {
+.story #characters div {
+  flex: none;
+}
+
+.swiper-container {
   width: 100%;
   /* height: 420px; */
   opacity: 1;
-  margin-bottom: 7em;
+  margin-bottom: 7em;  
+  overflow: hidden;
 }
 
-swiper-slide {
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+
   text-align: center;
   font-size: 18px;
-  /* background: #fff; */
   display: flex;
-  width: 100%;
   justify-content: center;
   align-items: center;
 }
 
-swiper-slide img {
+.swiper-slide figure {
   display: block;
-  /* max-height: 400px ;
+  /* max-height: 400px ; */
   width: 100%;
-  height: 100%; */
-  object-fit: cover;
+  /* height: 100%; */
+  object-fit: cover;  
 }
+
+
 
 /* ********************** */
 /*       NOMINATION       */
