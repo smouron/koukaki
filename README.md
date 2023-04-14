@@ -84,3 +84,5 @@ La mission jours est de dynamiser le site internet du studio d’animation Kouka
 - Ajout des décorations (chats + fleurs), selon les consignes de figma et avec les animations correspondantes (les chats flotent et les fleurs tournent).
 
 19 - Ajustement et mise en place de médias query pour être responsif.
+
+20 - Ajout de jQuery pour gérer l'apparition et la disparition de la modal pour le menu
