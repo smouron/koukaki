@@ -86,3 +86,14 @@ La mission jours est de dynamiser le site internet du studio d’animation Kouka
 19 - Ajustement et mise en place de médias query pour être responsif.
 
 20 - Ajout de jQuery pour gérer l'apparition et la disparition de la modal pour le menu
+
+21 - Modification de l'affichage des titres h3 et du logo titre en version portable : ils étaient affichés trop petit.
+
+22 - Modifiaction de la gestion du fond du texte de la section des nominations.
+
+23 - Modification de la gestion jQuery () : encapsuler la partie jQuery dans mon fichier JS avec 
+(function($) {
+  // code ici
+})(jQuery);
+
+
