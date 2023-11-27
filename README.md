@@ -5,7 +5,7 @@ Parcours Developpeur Wordpress (OpenClassrooms )
 
 ## Mission de ce projet
 
-La mission jours est de dynamiser le site internet du studio d’animation Koukaki, dont le dernier film a été nominé aux Oscars du meilleur court-métrage d’animation !
+La mission est de dynamiser le site internet du studio d’animation Koukaki, dont le dernier film a été nominé aux Oscars du meilleur court-métrage d’animation !
 
 ## Déroulement du projet
 
@@ -96,4 +96,6 @@ La mission jours est de dynamiser le site internet du studio d’animation Kouka
   // code ici
 })(jQuery);
 
+## Le site en ligne
 
+https://koukaki.stephane-mouron.fr/
