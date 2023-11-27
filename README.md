@@ -1,7 +1,6 @@
 # Koukaki
 
-Projet 9 - Améliorer le site d'un studio d'animation avec JavaScript et des animations CSS
-Parcours Developpeur Wordpress (OpenClassrooms )
+**Projet 9 - Améliorer le site d'un studio d'animation avec JavaScript et des animations CSS** (parcours Developpeur Wordpress avec OpenClassrooms )
 
 ## Mission de ce projet
 
@@ -91,11 +90,13 @@ La mission est de dynamiser le site internet du studio d’animation Koukaki, do
 
 22 - Modifiaction de la gestion du fond du texte de la section des nominations.
 
-23 - Modification de la gestion jQuery () : encapsuler la partie jQuery dans mon fichier JS avec 
-(function($) {
-  // code ici
+23 - Modification de la gestion jQuery () : encapsuler la partie jQuery dans mon fichier JS avec
+(function(\$) {
+// code ici
 })(jQuery);
 
-## Le site en ligne
+## Réalisation
 
-https://koukaki.stephane-mouron.fr/
+![Koukaki](/wp-content/themes/foce-child/assets/images/monitor-g9ceeb1f8d_640.png)
+
+[Le site "Koukaki" final en ligne](https://koukaki.stephane-mouron.fr/)
