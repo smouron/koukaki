@@ -1,5 +1,6 @@
 # Koukaki
 
+![Koukaki](./Banner-Fleurs-Chats-errants.png)
 **Projet 9 - Améliorer le site d'un studio d'animation avec JavaScript et des animations CSS** (parcours Developpeur Wordpress avec OpenClassrooms )
 
 ## Mission de ce projet
@@ -97,6 +98,6 @@ La mission est de dynamiser le site internet du studio d’animation Koukaki, do
 
 ## Réalisation
 
-![Koukaki](/wp-content/themes/foce-child/assets/images/monitor-g9ceeb1f8d_640.png)
+![Koukaki](./monitor-g9ceeb1f8d_640.png)
 
 [Le site "Koukaki" final en ligne](https://koukaki.stephane-mouron.fr/)
