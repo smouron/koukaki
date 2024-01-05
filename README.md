@@ -96,6 +96,8 @@ La mission est de dynamiser le site internet du studio d’animation Koukaki, do
 // code ici
 })(jQuery);
 
+24 - Ajout d'une page contact et d'une page RGPD
+
 ## Réalisation
 
 ![Koukaki](./monitor-g9ceeb1f8d_640.png)

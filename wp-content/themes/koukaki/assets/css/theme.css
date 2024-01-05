@@ -12,7 +12,7 @@
 }
 
 main {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 
@@ -39,7 +39,7 @@ main {
   margin: 0;
   padding: 0;
   top: 0;
-  right: 3em;
+  right: 5em;
   cursor: pointer;  
 }
 
@@ -451,6 +451,58 @@ main {
   }
 }
 
+.modal .modal__content--footer::after  {
+  animation: rotate-flower-08 var(--rotate) linear infinite;
+}
+
+@keyframes rotate-flower-08 {
+  from {
+      transform: rotate(0deg) scale(0.8);
+  }
+  to {
+      transform: rotate(360deg) scale(0.8);
+  }
+}
+
+.modal .modal__content--story::before  {
+  animation: rotate-flower-07 var(--rotate) linear infinite;
+}
+
+@keyframes rotate-flower-07 {
+  from {
+      transform: rotate(0deg) scale(0.7);
+  }
+  to {
+      transform: rotate(360deg) scale(0.7);
+  }
+}
+
+.modal .modal__content--place::after {
+  animation: rotate-flower-05 var(--rotate) linear infinite;
+}
+
+@keyframes rotate-flower-05 {
+  from {
+      transform: rotate(0deg) scale(0.5);
+  }
+  to {
+      transform: rotate(360deg) scale(0.5);
+  }
+}
+
+.modal .modal__content--characters::after {
+  animation: rotate-flower-03 var(--rotate) linear infinite;
+}
+
+@keyframes rotate-flower-03 {
+  from {
+      transform: rotate(0deg) scale(0.3);
+  }
+  to {
+      transform: rotate(360deg) scale(0.3);
+  }
+}
+
 /* ************************ */
 /*       LIEU - Nuage       */
 /* ************************ */
@@ -545,6 +597,81 @@ main {
 #characters > h3 span,
 #place span {
   width: 100%;
+}
+
+.entry-title {
+  color: #2b1582 !important;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+}
+
+h2.rpg_title,
+label {
+  color: #653ffe !important;
+  background-image: none !important;
+}
+
+form p,
+label {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+
+form p {
+  margin: 0;
+}
+
+form .container-form {
+  margin: 10px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  border-radius: 5px;
+}
+
+form span {
+  color: red;
+}
+
+form .name {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+form .subject,
+form .message {
+  width: 90%;
+}
+
+
+form .form-subject {
+  width: 100%;
+}
+
+form .submit p {
+  display: flex;
+  justify-content: center;
+}
+
+form input[type="submit"] {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #ff5c00;
+  color: #fff5e9;
+  padding: 15px 30px;
+  margin: 25px auto;
 }
 
 /* ---- AJOUT 5 ----  */
