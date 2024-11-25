@@ -98,8 +98,10 @@ La mission est de dynamiser le site internet du studio d’animation Koukaki, do
 
 24 - Ajout d'une page contact et d'une page RGPD
 
+25 - Ajout au dessus du header, d'un bandeau pour indiquer que c'est le résultat d'un exercice avec OpenClassrooms.
+
 ## Réalisation
 
 ![Koukaki](./monitor-g9ceeb1f8d_640.png)
 
-[Le site "Koukaki" final en ligne](https://koukaki.stephane-mouron.fr/)
+[Le site "Koukaki" final en ligne](https://koukaki.stephane-mouron.com/)
